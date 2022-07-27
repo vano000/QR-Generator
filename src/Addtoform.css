@@ -1,0 +1,128 @@
+body {
+    background-color: #E0E1DD;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    background: linear-gradient(62deg, #E0E1DD, #cdcecb, #90918f, #454645);
+    animation: gradient 10s ease infinite;
+    background-size: 400% 400%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12%;
+}
+
+.container div {
+    text-align: center;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    width: 320px;
+    height: 320px;
+    background-color: #E0E1DD;
+    color: #0D1B2A;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.6s;
+    transform: perspective(1px) translateZ(0);
+    backface-visibility: hidden;
+}
+
+.container div:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
+    -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
+}
+
+.QRimg {
+    border: 1px solid #ffffff;
+    width: 150px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+}
+
+.QRmsg {
+    margin-top: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.QRinput {
+    text-align: center;
+    border-radius: 7px;
+    height: 20px;
+    border: 1px solid #ffffff;
+    outline: none;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 5px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+}
+
+.Reloadbtn {
+    margin-top: 5px;
+    width: 30px;
+    height: 25px;
+    border-radius: 5px;
+    font-size: 15px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    border: 0px;
+    transition: 0.6s;
+}
+
+.Reloadbtn:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+.QRtext {
+    overflow: hidden;
+    max-width: 40ch;
+}
+
+@-webkit-keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@media only screen and (max-width: 901px) {
+    .container div {
+        margin-top: 10%;
+    }
+}
+
+@media only screen and (max-width: 501px) {
+    .container div {
+        margin-top: 25%;
+    }
+}
