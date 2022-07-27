@@ -2,4 +2,6 @@
 
 <p>Single page React app that generates QR codes.</p>
 
+<p> Link: https://ivanbtc.000webhostapp.com/ </p>
+
 ![qr](https://user-images.githubusercontent.com/41467529/181228510-3bcbd46b-d38f-4480-b75e-bdf75ee6ed4e.png)
